@@ -9,5 +9,8 @@
 
 const texto = '1,2,3,4,5,6,a.b c!d?e';
 
-const regexComPonto = /\./;
+const regexComPonto = /\./g;
 console.log(texto.split(regexComPonto));
+
+const regexSimbolos = /,|\.|\?|!| /g;
+console.log(texto.match(regexSimbolos));
